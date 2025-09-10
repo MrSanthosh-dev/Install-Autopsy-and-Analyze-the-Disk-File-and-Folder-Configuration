@@ -11,7 +11,9 @@ To install **Autopsy** and use it to analyze the disk’s file and folder config
 - **Test Data**: Disk image file (`.dd`, `.img`, `.E01`)
 
 ## ARCHITECTURE DIAGRAM
-![image](https://github.com/user-attachments/assets/7d89aa4d-5953-4ed1-82da-6c4f58f47dc2)
+
+![image](https://github.com/user-attachments/assets/6dc4288a-907e-4861-96b1-6b6ca4598a5f)
+
 
 ## DESIGN STEPS:
 ### Step 1:
@@ -35,93 +37,107 @@ Export or recover files if required for the investigation.
 ## PROGRAM(Windows)
 
 1. Download Autopsy from autopsy.com.
-
 2. Install and launch the application.
-
 3. Select **New Case → Name your case → Choose case folder**.
-
 4. Click Add **Data Source → Select Disk Image → Browse to file**.
-
 5. Choose ingest modules (file system, metadata, hash lookup, keyword search).
-
 6. Wait for processing to finish.
-
 7. Explore file/folder structure in the navigation pane.
-
 8.Export selected files for further examination.
-
-
-
-## CREATING A DISK PARTITION:
-Step1: Open File Manager
-
-● Right-click This PC → Click Show More Options.
-
-● Select Manage.
-
-Step2: Access Disk Management
-
-● In the new window, select Disk Management.
-
-Step3: Shrink the C Drive to Allocate Space
-
-• Locate C: drive → Right-click → Select Shrink Volume.
-
-• Enter the amount of memory to allocate for the new disk.
-
-• Click Shrink.
-
-Step4: Create a New Volume
-
-• Right-click on the newly unallocated space → Select New Simple Volume.
-
-• Follow the wizard and assign a disk name.
-
-• Click Finish to complete the process.
-
-• The new Disk Partition is created
-
-<img width="1919" height="1079" alt="Screenshot 2025-09-10 082236" src="https://github.com/user-attachments/assets/1c711222-5aba-48b8-bbd6-70a19d500b87" />
-
-
-## ANALYSING FILES USING AUTOPSY:
-
-Step1: Create a Case
-
-• Enter a case name and select a location to store the case data.
-
-• Provide a case number and investigator details if required.
-
-Step2: Add a Data Source
-
-• Click "Add Data Source" and choose the type:
-
-• Select the data source and let Autopsy process it.
-
-<img width="1920" height="1080" alt="479608779-bde40829-5bf3-40bc-9486-fc1f283ec721" src="https://github.com/user-attachments/assets/9c849126-868b-47de-ba87-724d3e00d44d" />
-
-Step3: File Analysis
-• Application
-
-
-
-• File Metadata
-
-<img width="1920" height="1080" alt="479608936-0a3bb9cd-1b63-4ce4-b4e6-c6a73b1e6761" src="https://github.com/user-attachments/assets/0a59c414-2631-49c8-b8f7-2f0384a80c4d" />
-
-
-• Click OS Account.
-
-<img width="1920" height="1080" alt="479609176-c77c21e9-6fdc-4cd7-958a-c904cb6b23dc" src="https://github.com/user-attachments/assets/f938cb05-1df9-4fc1-825a-910810fb7e19" />
-
-
 
 ## OUTPUT:
 
-• Generate Report
-<img width="1919" height="969" alt="479609728-12a44de1-688c-497a-a534-bff40147ee9d" src="https://github.com/user-attachments/assets/b492b0b0-730c-4035-97e7-1d998aa64148" />
+### CREATING A DISK PARTITION:
 
+#### Step 1: Open File Manager
+```
+Right-click This PC → Click Show More Options.
+
+Select Manage.
+```
+
+#### Step 2: Access Disk Management
+```
+In the new window, select Disk Management.
+```
+
+<img width="285" height="526" alt="437154922-f5f69c3b-f2d9-4171-b5cc-fa4a589597d5" src="https://github.com/user-attachments/assets/9cc6f801-862d-4895-aa0d-f113daabf114" />
+
+
+#### Step 3: Shrink the C Drive to Allocate Space
+```
+Locate C: drive → Right-click → Select Shrink Volume.
+
+Enter the amount of memory to allocate for the new disk.
+
+Click Shrink.
+```
+
+<img width="1919" height="1079" alt="Screenshot 2025-09-06 142216" src="https://github.com/user-attachments/assets/a70beea6-9e8b-434f-91eb-31a37f8e1cea" />
+
+
+
+#### Step 4: Create a New Volume
+```
+Right-click on the newly unallocated space → Select New Simple Volume.
+
+Follow the wizard and assign a disk name.
+
+Click Finish to complete the process.
+
+The new Disk Partition is created
+```
+
+
+<img width="1919" height="1079" alt="Screenshot 2025-09-06 141839" src="https://github.com/user-attachments/assets/c9b86285-f3ef-48bb-b1b7-d99852360075" />
+
+
+
+### ANALYSING FILES USING AUTOPSY:
+
+#### Step 1: Create a Case
+```
+Enter a case name and select a location to store the case data.
+
+Provide a case number and investigator details if required.
+```
+
+<img width="1919" height="1079" alt="Screenshot 2025-09-06 142818" src="https://github.com/user-attachments/assets/8966c252-42d5-4174-8e2f-16187315bc33" />
+
+
+
+#### Step 2: Add a Data Source
+```
+Click "Add Data Source" and choose the type:
+
+Select the data source and let Autopsy process it.
+```
+
+#### Step 3: File Analysis
+
+##### Application
+<img width="1919" height="1018" alt="Screenshot 2025-09-04 133502" src="https://github.com/user-attachments/assets/3153d6e7-b49f-4124-817d-5554948ba04c" />
+
+
+<img width="1919" height="1079" alt="Screenshot 2025-09-04 133534" src="https://github.com/user-attachments/assets/80e8201b-e0da-45bb-b750-9935d8e3aed5" />
+
+##### File Metadata
+
+<img width="1915" height="1024" alt="Screenshot 2025-09-04 133523" src="https://github.com/user-attachments/assets/6b9e8325-0f4e-421a-b74c-684edc3d673d" />
+
+
+
+##### Click OS Account.
+
+
+<img width="1910" height="1079" alt="Screenshot 2025-09-04 133546" src="https://github.com/user-attachments/assets/f205dc35-1ba1-4dd0-b927-a460054776b6" />
+
+
+### GENERATE REPORT:
+
+<img width="1919" height="1079" alt="Screenshot 2025-09-04 133727" src="https://github.com/user-attachments/assets/44f0ac4f-023e-4b0f-9c79-4cd7c4c75acf" />
 
 
 ## RESULT:
+
 Autopsy was installed successfully and used to analyze disk, file, and folder configuration for forensic investigation.
